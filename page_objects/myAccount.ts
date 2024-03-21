@@ -14,7 +14,7 @@ export class MyAccountPage {
         this.helpers = new Helpers(page)
     }
 
-    async fillInDetails() {
+    async fillRegisterDetails() {
         await this.page.locator(myAccountSelectors.register.inputField("First Name")).fill("Test First");
         await this.page.locator(myAccountSelectors.register.inputField("Last Name")).fill("Test Last");
         await this.page.locator(myAccountSelectors.register.inputField("E-Mail")).fill(await this.helpers.generateUniqueEmail());
@@ -23,5 +23,10 @@ export class MyAccountPage {
         await this.page.locator(myAccountSelectors.register.inputField("Password Confirm")).fill("testpass");
 
         await this.page.locator(myAccountSelectors.register.agreeCheckbox).click();
+    }
+
+    async fillLoginDetails(email: string, password: string) {
+        await this.page.locator(myAccountSelectors.login.inputField("E-Mail Address")).fill(email);
+        await this.page.locator(myAccountSelectors.login.inputField("Password")).fill(password);
     }
 }

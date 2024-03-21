@@ -18,4 +18,10 @@ export class HeaderComp {
         await this.page.locator(componentSelectors.navHeader.navDropdownItem("Register")).click();
         await this.page.waitForURL(/register/);
     }
+    
+    async navigateToLogin() {
+        await this.page.locator(componentSelectors.navHeader.navDropdown("My account")).hover();
+        await this.page.locator(componentSelectors.navHeader.navDropdownItem("Login")).click();
+        await this.page.waitForURL(/login/);
+    }
 }

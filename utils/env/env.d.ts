@@ -5,7 +5,7 @@ declare global {
         interface ProcessEnv {
             ENV: "dev" | "uat" | "stage",
             BASE_URL: string,
-            USERNAME: string,
+            EMAIL: string,
             PASSWORD: string,
         }
     }

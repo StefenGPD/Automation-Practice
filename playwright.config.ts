@@ -18,7 +18,7 @@ const allureConfig = {
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  timeout: 2.5 * 60 * 1000,
+  timeout: 2 * 60 * 1000,
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
