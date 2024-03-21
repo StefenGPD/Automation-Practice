@@ -1,0 +1,25 @@
+{
+    "name": "automation-practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test-dev": "cross-env test_env=dev npx playwright test",
+        "generate-report": "allure generate test-results/allure-results -o test-results/allure-report --clean",
+        "open-report": "allure open test-results/allure-report"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@faker-js/faker": "^8.4.1",
+        "@playwright/test": "^1.42.1",
+        "@types/node": "^20.11.30",
+        "allure-commandline": "^2.27.0",
+        "allure-playwright": "^2.14.1",
+        "cross-env": "^7.0.3",
+        "dayjs": "^1.11.10",
+        "dotenv": "^16.4.5",
+        "fs": "^0.0.1-security"
+    }
+}

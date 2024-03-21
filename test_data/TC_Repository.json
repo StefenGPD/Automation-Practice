@@ -1,0 +1,82 @@
+{
+  "TC-001": {
+    "MODULE": "HOME",
+    "SECTION": "Home Page",
+    "DESCRIPTION": "Feature: Home Page\n\nScenario: Verify home page elements\n\nGiven I am in the Home page\nThen I should see the elements loaded in the page, #elements"
+  },
+  "TC-002": {
+    "MODULE": "HEADER",
+    "SECTION": "Header",
+    "DESCRIPTION": "Feature: Header\n\nScenario: Verify header is always present\n\nGiven I am in any page of the website\nThen the header should always be visible"
+  },
+  "TC-003": {
+    "MODULE": "HEADER",
+    "SECTION": "Search Bar",
+    "DESCRIPTION": "Feature: Search bar\n\nScenario: Can use search bar to look for products\n\nGiven I am in any page of the website\nWhen I type a keyword or keywords in the search bar\nAnd click the Search button\nThen I should be navigated to the search result page"
+  },
+  "TC-004": {
+    "MODULE": "HEADER",
+    "SECTION": "Search Bar",
+    "DESCRIPTION": "Feature: Search bar\n\nScenario: Can filter search by categories\n\nGiven I am in any page of the website\nWhen I click on the All Categories dropdown in the search bar\nThen I should be able to see the categories to filter my search with, #categories"
+  },
+  "TC-005": {
+    "MODULE": "HEADER",
+    "SECTION": "Navigation",
+    "DESCRIPTION": "Feature: Navigation\n\nScenario: Header should contain a navigation section\n\nGiven I am in any page of the website\nThen I should be able to see the navigation section, #navigation"
+  },
+  "TC-006": {
+    "MODULE": "HEADER",
+    "SECTION": "Navigation",
+    "DESCRIPTION": "Feature: Navigation\n\nScenario: Clicking Shop by Category should show categories\n\nGiven I am in any page of the website\nWhen I click the Shop by Category element in the header\nThen a list of categories should pop up from the left of the screen"
+  },
+  "TC-007": {
+    "MODULE": "MY ACCOUNT",
+    "SECTION": "Register",
+    "DESCRIPTION": "Feature: Register Account\n\nScenario: Must be able to create an account\n\nGiven I am in Register account page\nWhen I fill the necessary input fields with details\nAnd I click the Continue button\nThen I should see that my account has been created successfully"
+  },
+  "TC-008": {
+    "MODULE": "MY ACCOUNT",
+    "SECTION": "Register",
+    "DESCRIPTION": "Feature: Register Account\n\nScenario: Register account input fields must be validated\n\nGiven I am in Register account page\nWhen I click the Continue button\nBut I did not fill the necessary input fields with details\nThen I should not be navigated to a success page\nAnd I should see that the missing fields have validation messages in them"
+  },
+  "TC-009": {
+    "MODULE": "MY ACCOUNT",
+    "SECTION": "Login",
+    "DESCRIPTION": "Feature: Login\n\nScenario Outline: Must be able to log in to a registered account\n\nGiven I am in Login page\nWhen I fill the input fields with the correct <email> and <password>\nAnd I click the Login button\nThen I should be logged in and navigated to My Account page"
+  },
+  "TC-010": {
+    "MODULE": "MY ACCOUNT",
+    "SECTION": "Login",
+    "DESCRIPTION": "Feature: Login\n\nScenario Outline: Must not be logged in with incorrect credentials\n\nGiven I am in Login page\nWhen I fill the input fields with invalid <email> and <password>\nAnd I click the Login button\nThen I should not be logged in and see an error message"
+  },
+  "TC-011": {
+    "MODULE": "MY ACCOUNT",
+    "SECTION": "My Account Page",
+    "DESCRIPTION": "Feature: My Account Page\n\nBackground: Logged in\nGiven I am logged in to my account\n\nScenario: Verify My Account page elements\n\nGiven I am in My Account page\nThen I should see the elements loaded in the page, #elements"
+  },
+  "TC-012": {
+    "MODULE": "MY ACCOUNT",
+    "SECTION": "My Account Page",
+    "DESCRIPTION": "Feature: My Account Page\n\nScenario: Cannot access My Account if not logged in\n\nGiven I am in any page of the website\nBut I am not logged in\nWhen I try to access My Account via url, #url\nThen I should be navigated to the Login page"
+  },
+  "TC-013": {
+    "MODULE": "PRODUCT",
+    "SECTION": "Product Search",
+    "DESCRIPTION": "Feature: Product Search\n\nScenario: Verify search result page elements\n\nGiven I am in any page of the website\nWhen I search for a product using the search bar\nAnd I am navigated to the search result page\nThen I should see the elements loaded in the page, #elements"
+  },
+  "TC-014": {
+    "MODULE": "PRODUCT",
+    "SECTION": "Product Search",
+    "DESCRIPTION": "Feature: Product Search\n\nScenario: Hovering on a product in search result page shows actions for the product\n\nGiven I am in search result page\nWhen I hover my pointer to a product on the list\nThen I should be able to see actions that I can do for the product, #actions"
+  },
+  "TC-015": {
+    "MODULE": "PRODUCT",
+    "SECTION": "Product Search",
+    "DESCRIPTION": "Feature: Product Search\n\nScenario: Clicking on a product should take me to the product's page\n\nGiven I am in search result page\nWhen I click on a product in the list\nThen I should be navigated to the product's page"
+  },
+  "TC-016": {
+    "MODULE": "PRODUCT",
+    "SECTION": "Product Page",
+    "DESCRIPTION": "Feature: Product Page\n\nScenario: Verify product page elements\n\nGiven I am in a product page\nThen I should see the elements loaded in the page, #elements"
+  }
+}
